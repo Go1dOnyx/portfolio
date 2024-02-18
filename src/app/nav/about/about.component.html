@@ -1,0 +1,70 @@
+<div class="container-one">
+    <img class="about-image" src="assets/AboutPortfolio1.png">
+    <div class="about-container">
+        <a class="backToHome" (click)="redirectTo('home')" routerLink="">←Back To Home</a>
+        <h1>About Me</h1>
+        <div class="about-info">
+            <img class="about-image-two" src="assets/AboutPortfolio1.png">
+            <p>Location: Dallas, TX 75235</p>
+            <p>Email Address: <a style="color:red;" href="mailto:jdiazndca21@gmail.com">Jdiazndca21&#64;gmail.com</a></p>
+            <p>Phone Number: <a style="color:red;" href="tel:469-996-8340">+1 (469) 996-8340</a></p>
+        </div>
+        <p style="text-indent: 18px; color:rgb(53, 53, 53)">
+            I'm Jesus Diaz, a recent graduate from Brookhaven College at Farmers Branch, TX. 
+            I graduated with an Associate's Degree in Software Programmer/Developer and recieved
+            my certfications as a computer programmer and in Microsoft Word. I'm Full Stack Developer, 
+            artist and computer technician from Dallas, TX. I've worked with various CRUD and 
+            RESTful applications that include an ecommerce store, a banking system, and social 
+            media pages. I've even managed the databases for these applications using SSMS and 
+            MySQL. I use Photoshop for my designs and currently building my own graphic tees 
+            shop, known as Zym or Zymb!ot3. I work with Elite Devz as remote Full Stack Developer
+            in ASP.NET MVC. 
+        </p><br>
+        <div class="social-section">
+            <i class="fa fa-github social-item" style="font-size:48px;" (click)="redirectTo('github')"></i>
+            <i class="fa fa-linkedin-square social-item" style="font-size:48px;" (click)="redirectTo('linkedin')"></i>
+            <i class="fa fa-youtube-play social-item" style="font-size:48px;" (click)="redirectTo('youtube')"></i>
+        </div>
+    </div>
+</div>
+<div class="container-second">
+    <div class="category">
+        <h2>Professional Experience</h2>
+        <div class="sub-container">
+            <h3>Elite Devz - Remote Full Stack Developer</h3>
+            <p>Feburary 2022 - Currently | St. Louis, Missouri 63105</p>
+            <ul>
+                <li>Worked on an Internal Web Based Application that was for a Crawler Project</li>
+                <li>The Crawler was designed to crawl any set of websites and was extremely configurable</li>
+                <li>Develop login and registration pages for an Employee Management and Scheduler systems.</li>
+                <li>Stack Utilized: C#, .NET 7, ASP.NET, MVC, EF, Web APIs, SQL Server, HTML, CSS, JavaScript, xUnit.</li>
+                <li>Methodologies Used: RESTful, SOAP, and other Web APIs.</li>
+            </ul>
+        </div>
+        <div class="sub-container">
+            <h3>SMS InfoComm - Computer Technician</h3>
+            <p>April 2022 - Currently | Grapevine, Texas 76051</p>
+            <ul>
+                <li>Diagnose and Troubleshoot HP Laptops</li>
+                <li>Disassembly of Hardware Parts</li>
+                <li>Repairing Defective Parts</li>
+                <li>Fix Software Issues</li>
+            </ul>
+        </div>
+    </div>
+    <div class="category">
+        <h2>Educational Experience</h2>
+        <div class="sub-container">
+            <h3>Brookhaven College - Associate's Degree in Software Developer</h3>
+            <p>August 2019 - August 2021 | Farmers Branch, Texas 75244</p>
+            <ul>
+                <li>Creating Full Stack applications in Web design classes using HTML, JavaScript, PHP</li>
+                <li>Worked with Windows Forms to designs desktop applications using C# and ADO.NET</li>
+                <li>Managed SQL databases using SSMS and MySQL</li>
+                <li>Certification for Computer Programmer and Microsoft Word</li>
+                <li>Graduated with a GPA of 3.2</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
