@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
         this.formData = this.builder.group({
             FullName: new FormControl('', [Validators.required]),
             Email: new FormControl('', [Validators.required, Validators.email]),
-            Phone: new FormControl('', [Validators.required, Validators.pattern('[0-9]{10}')]),
+            Phone: new FormControl('', [Validators.required, Validators.pattern('[0-9]{10}')]), // make this variable to const phonePattern = /^[0-9_-]{10,12}$/; 
             Comment: new FormControl('', [Validators.required])
         });
     }
