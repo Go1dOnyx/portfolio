@@ -22,7 +22,10 @@ export class ContactComponent implements OnInit {
 
     submitForm(formData: any) {
         //add some if statements for each form property such as mobile if it contains - or no dash etc.
-            console.log(formData?.value);
+        //email a certain length of characters
+        //name a certain length of Characters with space
+        //comment a certain lenght of characters
+            console.log(formData?.value); // figure out why this does not work
             console.log(formData.FullName);
             console.log(formData.Email);
             console.log(formData.Comment);
