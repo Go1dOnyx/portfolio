@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
     }
 
     submitForm(formData: any) {
+        //this could be added in the validators in ngOnInit
         //add some if statements for each form property such as mobile if it contains - or no dash etc.
         //email a certain length of characters
         //name a certain length of Characters with space
