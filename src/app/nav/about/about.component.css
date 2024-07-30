@@ -1,0 +1,57 @@
+.about-image {
+    width: 28rem;
+    height: 30rem;
+}
+.about-image-second {
+    display: none;
+}
+.bio-container {
+    padding: 3rem;
+}
+.exp-box {
+    padding: 2rem;
+}
+h1 {
+    color:red;
+}
+ul li {
+    list-style: none;
+}
+.custom-title {
+    color: white;
+    background-color: rgb(255, 42, 42); 
+    box-shadow: 5px 5px 2px 1px rgba(255, 25, 21, 0.473);
+    padding-left: 0.3rem;
+    margin-bottom: 1.5rem;
+    width: 60%;
+}
+.icon-image {
+    color: red;
+}
+
+@media (min-width: 606px) and (max-width: 1301px) {
+    .about-image {
+        display: none;
+    }
+    .about-image-second {
+        display: block;
+        width: 50%;
+    }
+    .mobile-invisible {
+        display: none;
+    }
+}
+@media (max-width: 605px) {
+    .about-image {
+        display: none;
+    }
+    .about-image-second {
+        display: none;
+    }
+    .exp-box {
+        width: 99%;
+    }
+    .bio-container {
+        padding: 1rem;
+    }
+}

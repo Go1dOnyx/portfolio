@@ -1,0 +1,12 @@
+.nav-logo {
+    border: 2px solid red;
+    border-radius: 1px;
+    color: red;
+    padding: 0 10px;
+    font-size: 1.3rem;
+}
+@media (max-width: 1020px) {
+    .nav-logo {
+        font-size: 1rem;
+    }
+}

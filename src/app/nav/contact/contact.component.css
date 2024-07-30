@@ -1,0 +1,28 @@
+.header-title {
+    color: red;
+    text-decoration: underline;
+}
+.custom-btn {
+    border: 1px solid red;
+    border-radius: 3px;
+    font-size: larger;
+    background-color: red;
+    box-shadow: 0px 3px 5px 0px rgba(80, 80, 80, 0.5);
+    color: white;
+    margin: 0 20px;
+    padding: 0.1rem 0.5rem;
+}
+.custom-btn:hover {
+    background-color: rgb(254, 113, 133);
+    cursor: pointer;
+    transform: scale(1.055);
+    transition: transform 170ms ease-in-out;
+}
+.custom-btn::after {
+    content: ">";
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.custom-btn:hover::after {
+    transform: rotate(360deg);
+}

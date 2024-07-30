@@ -1,0 +1,35 @@
+.nav-logo {
+    border: 2px solid red;
+    border-radius: 1px;
+    color: red;
+    padding: 0 10px;
+}
+
+.hamburger-menu {
+   display: block;
+   height: 25px;
+   width: 32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.hamburger-menu .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 1px;
+    background: red;
+}
+
+.border-none {
+    border: none;
+}
+.active-tab {
+    color:red;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: rgb(254, 113, 113);
+}

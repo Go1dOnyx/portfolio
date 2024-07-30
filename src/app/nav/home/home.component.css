@@ -1,0 +1,209 @@
+.profile-img {
+    height: 30rem;
+    width: 31rem;
+}
+.profile-img-second {
+    display: none;
+}
+.header-tag {
+    background-color: red;
+    color: white;
+    padding: 2px 15px;
+}
+.header-subtitle {
+    color: gray; 
+    font-size: large;
+}
+a {
+    color: red;
+}
+a:hover {
+    color: rgb(254, 113, 113);
+}
+.custom-btn {
+    border: 1px solid red;
+    border-radius: 3px;
+    font-size: larger;
+    background-color: red;
+    box-shadow: 0px 3px 5px 0px rgba(80, 80, 80, 0.5);
+    color: white;
+    margin: 0 20px;
+    padding: 0.1rem 0.5rem;
+}
+.custom-btn:hover {
+    background-color: rgb(254, 113, 133);
+    cursor: pointer;
+    transform: scale(1.055);
+    transition: transform 170ms ease-in-out;
+}
+.custom-btn::after {
+    content: '>';
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.custom-btn:hover::after {
+    transform: rotate(90deg);
+}
+
+section h1 {
+    text-decoration: underline;
+    color: red;
+    margin-bottom: 5rem;
+}
+section div h5 {
+    text-decoration: underline;
+    color: red;
+    margin-bottom: 55px;
+}
+
+.skill-image {
+    width: 50%;
+    margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 845px) and (max-width: 1025px) {
+    header div h2 {
+        font-size: 3rem;
+    }
+    .header-subtitle {
+        font-size: 2rem;
+    }
+    .profile-img {
+        display: none;
+    }
+    .profile-img-second {
+        display: block;
+        border: 1px solid black;
+        height: 20rem;
+        width: 20rem;
+        margin: 20px;
+    }
+    .skill-container {
+        width: 30rem;
+    }
+    .skill-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-image {
+        width: 40%;
+        margin-top: 5rem;
+    }
+    header div p {
+        font-size: x-large;
+    }
+    a {
+        font-size: x-large;
+    }
+    .custom-btn {
+        font-size: x-large;
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 790px) and (max-width: 844px) {
+    header div h2 {
+        font-size: 3rem;
+    }
+    .header-subtitle {
+        font-size: 2rem;
+    }
+    .profile-img {
+        display: none;
+    }
+    .profile-img-second {
+        display: block;
+        border: 1px solid black;
+        height: 20rem;
+        width: 22rem;
+        margin: 25px;
+    }
+    .skill-container {
+        width: 30rem;
+    }
+    .skill-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-image {
+        width: 40%;
+        margin-top: 5rem;
+    }
+    header div p {
+        font-size: x-large;
+    }
+    section div p {
+        font-size: x-large;
+    }
+    a {
+        font-size: x-large;
+    }
+    .custom-btn {
+        font-size: x-large;
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 730px) and (max-width: 789px) {
+    header div h2 {
+        font-size: 3rem;
+    }
+    .header-subtitle {
+        font-size: 2rem;
+    }
+    .profile-img {
+        display: none;
+    }
+    .profile-img-second {
+        display: block;
+        border: 1px solid black;
+        height: 20rem;
+        width: 21rem;
+        margin: 25px;
+    }
+    .skill-container {
+        width: 30rem;
+    }
+    .skill-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-image {
+        width: 40%;
+        margin-top: 5rem;
+    }
+}
+@media (max-width: 729px) {
+    .profile-img {
+        display: none;
+    }
+    .profile-img-second {
+        display: none;
+    }
+    .skill-container {
+        width: 18rem;
+    }
+    .skill-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-image {
+        width: 50%;
+        margin-top: 5rem;
+    }
+    section div p {
+        font-size: large;
+    }
+    header {
+        width: fit-content;
+    }
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .custom-btn {
+        margin-top: 2rem;
+    }
+}
