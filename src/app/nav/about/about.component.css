@@ -6,6 +6,7 @@
     display: none;
 }
 .bio-container {
+    width:50%;
     padding: 3rem;
 }
 .exp-box {
@@ -30,6 +31,12 @@ ul li {
 }
 
 @media (min-width: 606px) and (max-width: 1301px) {
+    .toggle-image {
+        display: none;
+    }
+    .bio-container {
+        width:100%;
+    }
     .about-image {
         display: none;
     }
@@ -42,6 +49,12 @@ ul li {
     }
 }
 @media (max-width: 605px) {
+    .toggle-image {
+        display: none;
+    }
+    .bio-container {
+        width:100%;
+    }
     .about-image {
         display: none;
     }
