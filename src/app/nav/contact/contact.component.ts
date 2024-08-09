@@ -15,17 +15,19 @@ export class ContactComponent implements OnInit {
         this.formData = this.builder.group({
             FullName: new FormControl('', [Validators.required]),
             Email: new FormControl('', [Validators.required, Validators.email]),
-            Phone: new FormControl('', [Validators.required]),
             Comment: new FormControl('', [Validators.required])
         });
     }
 
     submitForm(formData: any) {
-        if(formData?.valid) {
-            console.log(formData?.value);
+        //this could be added in the validators in ngOnInit
+        //add some if statements for each form property such as mobile if it contains - or no dash etc.
+        //email a certain length of characters
+        //name a certain length of Characters with space
+        //comment a certain lenght of characters
+            console.log(formData?.value); // figure out why this does not work
             console.log(formData.FullName);
             console.log(formData.Email);
             console.log(formData.Comment);
-        }
     }
 }
