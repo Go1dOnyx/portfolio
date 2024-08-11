@@ -1,11 +1,47 @@
 <div class="container-fluid">
     <div class="d-flex justify-content-center">
         <h1 style="color:red;">Projects</h1>
-
-        <button class="" type="button">Project Info</button>
     </div>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modalBox">
+    Project Info
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalBox" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalLabel">Project Information</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          These projects are not all finished but are currently in development since I'm working on the UI/UX and database connections.
+          The projects I've made use local databases and would not function properly when you clone them from my GitHub repo, so 
+          I will soon have these databases up and running through a cloud service. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <hr>
-    <div class="d-flex justify-content-left">
-        Items
+    <input type="text" class="m-2" style="width: 40%" [(ngModel)]="inputSearch" placeholder="search...">
+    <br>
+
+    <!--List of Projects-->
+    <div class="d-flex md-4">
+        <div class="justify-content-center" style="display: block;">
+            <div class="modal-container m-2 p-4 shadow" *ngFor="let category of projectList">
+                <div class="" *ngIf="matchedList(category)">
+                    <h3 class="modal-header-title">{{category.name}}</h3>
+                    <p>{{category.descrip}}</p>
+                    <p><span style="color:red;">Stack Utilized: </span>{{category.stacks}}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

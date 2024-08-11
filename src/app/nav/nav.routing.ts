@@ -9,7 +9,7 @@ import { ErrorComponent } from "./error";
 const routes : Routes = [
     {path: '', component: HomeComponent},
     {path: 'about', component: AboutComponent},
-    {path: 'project', component: ProjectComponent},
+    {path: 'projects', component: ProjectComponent},
     {path: 'contact', component: ContactComponent},
 
     //otherwise
