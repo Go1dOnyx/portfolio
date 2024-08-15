@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, FormControl, Validators, NgForm } from "@angular/forms";
+import { HttpClient, HttpParams } from "@angular/common/http";
 
 @Component({
     selector: 'app-contact',
@@ -9,26 +10,36 @@ import { FormBuilder, FormGroup, FormControl, Validators, NgForm } from "@angula
 export class ContactComponent implements OnInit {
     formData!: FormGroup;
 
-    constructor(private builder: FormBuilder) {}
+    constructor(private builder: FormBuilder, private httpClient: HttpClient) {}
 
     ngOnInit() {
         this.formData = this.builder.group({
             FullName: new FormControl('', [Validators.required]),
             Email: new FormControl('', [Validators.required, Validators.email]),
-            Phone: new FormControl('', [Validators.required]),
             Comment: new FormControl('', [Validators.required])
         });
     }
 
     submitForm(formData: any) {
-        //this could be added in the validators in ngOnInit
-        //add some if statements for each form property such as mobile if it contains - or no dash etc.
-        //email a certain length of characters
-        //name a certain length of Characters with space
-        //comment a certain lenght of characters
-            console.log(formData?.value); // figure out why this does not work
-            console.log(formData.FullName);
-            console.log(formData.Email);
-            console.log(formData.Comment);
+        let param = new HttpParams()
+        .set("FullName", formData.FullName)
+        .set("Email", formData.Email)
+        .set("Message", formData.Message);
+
+        if(this.formData.valid){
+            this.httpClient.post('https://localhost:7138/api/Email/Send', {param})
+            .subscribe(
+                response => {
+                    console.log(formData.FullName);
+                    console.log(formData.Email);
+                    console.log(formData.Comment);
+
+                    console.log("Email sent successfully", response)
+                },
+                error => {
+                    console.log("Email could not be sent", error);
+                }
+            );   
+        }
     }
 }
