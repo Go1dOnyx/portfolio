@@ -7,6 +7,13 @@ import { Component } from "@angular/core";
 })
 
 export class HomeComponent {
-    
+    downloadResume(): void {
+        const filePath = '/assets/resume/resume.pdf';
+        const link = document.createElement('a');
+
+        link.href = filePath;
+        link.download = 'resume.pdf';
+        link.click();
+    }
 }
 

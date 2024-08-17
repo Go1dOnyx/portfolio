@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
 })
 
 export class ProjectComponent {
-    inputSearch:string  = '';
+    inputSearch: string  = '';
 
     projectList = [
         {name: "WorldBankMVC", stacks: "ASP.NET MVC, HTML, CSS, JavaScript, Razor, EF Core, LINQ, CRUD",
@@ -23,7 +23,7 @@ export class ProjectComponent {
         {name: "PaymentManager", stacks: "ASP.NET, Web APIs, HTML, CSS, Angular, EF Core, LINQ, CRUD, REST API",
             descrip: "The Payment Manager is an appliation that manages payments, accounts, and financial information similar to"+
             "similar to the WorldBankMVC but in Angular.",
-            ulr : ""
+            url : "https://github.com/Go1dOnyx/"
         },
         {name: "PasswordGeneratorMVC", stacks: "ASP.NET MVC, .NET, HTML, CSS, JavaScript, Razor.",
             descrip: "The Password Generator is an ASP.NET MVC application that generates a random password based on possible "+
