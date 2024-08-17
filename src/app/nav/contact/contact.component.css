@@ -26,3 +26,12 @@
 .custom-btn:hover::after {
     transform: rotate(360deg);
 }
+.width-fluid {
+    width: 40%;
+}
+
+@media screen and (max-width: 699px) {
+    .width-fluid {
+        width: 70%;
+    }
+}
