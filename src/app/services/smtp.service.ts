@@ -7,7 +7,7 @@ import { Observable} from "rxjs";
 })
 
 export class SmtpService {
-    private url = 'https://localhost:7122/api/Email';
+    private url = '/api/Email';
 
     constructor(private httpClient: HttpClient){}
 
@@ -15,3 +15,6 @@ export class SmtpService {
         return this.httpClient.post<any>(`${this.url}`, contatForm);
     }
 }
+/* 
+private url = 'https://localhost:7122/api/Email';
+*/
