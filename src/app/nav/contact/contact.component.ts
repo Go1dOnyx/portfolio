@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, FormControl, Validators} from "@angular/forms";
+import { Router } from "@angular/router";
 import { SmtpService } from "../../services/smtp.service";
 import { Contact } from "../../services/contact";
 
@@ -12,7 +13,7 @@ export class ContactComponent implements OnInit {
     public contactModel: Contact = {} as Contact;
     formData!: FormGroup;
 
-    constructor(private builder: FormBuilder, private smptService: SmtpService) {}
+    constructor(private builder: FormBuilder, private router: Router, private smptService: SmtpService) {}
 
     ngOnInit() {
         this.formData = this.builder.group({
@@ -26,6 +27,7 @@ export class ContactComponent implements OnInit {
         this.smptService.EmailService(contactModel).subscribe(
             response => {
                 console.log("Angular: Email Sent Successful.", response);
+                this.router.navigate(['/']);
             }
         );
     }

@@ -5,6 +5,12 @@
     color: red;
     text-decoration: underline;
 }
+input {
+    border:none;
+    border-bottom: 1px solid red;
+    color:red;
+    padding: 5px;
+}
 @media screen and (max-width: 1000px) {
     .modal-container {
         width: 100%;

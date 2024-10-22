@@ -1,5 +1,7 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { catchError, timeout } from 'rxjs/operators';
+import { environment } from "../../environments/environment.prod";
 import { Observable} from "rxjs";
 
 @Injectable({
@@ -7,14 +9,11 @@ import { Observable} from "rxjs";
 })
 
 export class SmtpService {
-    private url = '/api/Email';
+    private url = environment.apiUrl;
 
     constructor(private httpClient: HttpClient){}
 
     EmailService(contatForm: any): Observable<any> {
-        return this.httpClient.post<any>(`${this.url}`, contatForm);
+        return this.httpClient.post<any>(`${this.url}/api/Email`, contatForm);
     }
 }
-/* 
-private url = 'https://localhost:7122/api/Email';
-*/

@@ -1,3 +1,31 @@
+@keyframes slideFadeIn {
+    from {
+      transform: translateX(-30%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideTopFadeIn {
+    from {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+.slide-fade-in {
+    animation: slideFadeIn 1.5s ease-out;
+}
+.slide-top-fade-in {
+    animation: slideTopFadeIn 1.5s ease-out;
+}
+
 .bio-container {
     width: 55%;
     display: inline;

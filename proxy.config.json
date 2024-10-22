@@ -1,0 +1,7 @@
+{
+    "/api/Email" : {
+        "target" : "https://31.220.18.138:7122",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

@@ -26,7 +26,7 @@ import { ErrorComponent } from './nav/error';
     AboutComponent,
     ContactComponent,
     ProjectComponent,
-    ErrorComponent
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
